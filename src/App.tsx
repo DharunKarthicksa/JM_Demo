@@ -16,9 +16,9 @@ import { ThemeProvider, CssBaseline } from '@mui/material';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import theme from './config/theme';
-import routes from './config/routes';
-import { AuthProvider } from './context/AuthContext';
-import { PlantProvider } from './context/plantContext';
+import routes from './controllers/routes';
+import { AuthProvider } from './controllers/context/AuthContext';
+import { PlantProvider } from './controllers/context/plantContext';
 
 const router = createBrowserRouter(routes);
 
